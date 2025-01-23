@@ -1,0 +1,421 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(208, 199, 199);
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.left {
+    width: 150px;
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: #0c0c0c;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+}
+
+
+.dbz-col {
+    max-height: 0;
+    /* Initially hide the .dbz-col */
+    overflow: hidden;
+    /* Hide the content */
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    column-gap: 30px;
+    justify-content: center;
+    /* Adding a smooth transition */
+    transition: max-height 1.5s ease;
+
+}
+
+.O-col {
+    max-height: 0;
+    /* Initially hide the .dbz-col */
+    overflow: hidden;
+    /* Hide the content */
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    column-gap: 30px;
+    justify-content: center;
+    /* Adding a smooth transition */
+    transition: max-height 1.5s ease;
+}
+
+.O-col img {
+    width: 200px;
+    margin: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+.O-col img:hover {
+    transform: scale(1.15);
+    z-index: 3;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    /* Aligning the text to the center */
+}
+
+.dbz-col img {
+    width: 200px;
+    margin: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+.dbz-col img:hover {
+    transform: scale(1.15);
+    z-index: 3;
+}
+
+.op-col img:hover {
+    transform: scale(1.15);
+    z-index: 3;
+}
+
+
+
+.RemHov:hover {
+    transform: none;
+}
+
+.RemHov {
+
+    pointer-events: none;
+}
+
+
+.op-col {
+    max-height: 0;
+    /* Initially hide the .dbz-col */
+    overflow: hidden;
+    /* Hide the content */
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    column-gap: 30px;
+    justify-content: center;
+    transition: max-height 1.5s ease;
+    /* Adding a smooth transition */
+}
+
+.op-col img {
+    width: 200px;
+    margin: 10px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+/* Adding a class to show the .dbz-col */
+.show {
+    max-height: 1000px;
+    /* Adjust the max-height to a suitable value to show all content */
+}
+
+/* Styling the indicator button */
+.indicator-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.indicatorbtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f53d3d;
+    border: 3px solid #f03c3c;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.logo {
+    padding-left: 10%;
+    display: inline-block;
+
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.705);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo img {
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background: rgb(222, 214, 214);
+
+}
+
+.navbar header {
+    display: flex;
+    font-size: 24px;
+    margin: 0;
+    width: 100%;
+    padding-right: 140px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+}
+
+.indicator-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.THIRindicator-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0e5e5;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.SECindicator-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f53d3d;
+    border: 3px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+
+.indicator-btn {
+    border-radius: 8px;
+    background-color: rgb(51, 144, 181);
+    color: rgb(243, 226, 226);
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.SECindicator-btn {
+    border-radius: 8px;
+    background-color: rgb(112, 152, 238);
+    color: rgb(252, 252, 252);
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 2px 4px rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.THIRindicator-btn {
+    border-radius: 8px;
+    background-color: rgb(44, 161, 165);
+    color: rgb(255, 253, 253);
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 2px 4px rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.THIRindicator-btn:hover {
+    background-color: rgb(0, 255, 136);
+}
+
+.SECindicator-btn:hover {
+    background-color: rgb(187, 230, 35);
+}
+
+.indicator-btn:hover {
+    background-color: rgb(234, 159, 19);
+}
+
+.indicator-btn .indicatorbtn .THIRindicator-btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+
+.popup .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.content {
+    position: fixed;
+}
+
+.popup .content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 450px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.close-btn {
+    background-color: transparent;
+    background: none;
+}
+
+.popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    color: #000000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+    background-color: rgb(234, 159, 19);
+}
+
+button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+
+    .dbz-col,
+    .op-col,
+    .O-col {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        /* Adjust the column width for smaller screens */
+    }
+}
