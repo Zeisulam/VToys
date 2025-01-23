@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VT Toys</title>
+    <link rel="icon" href="images/vt toys.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptmain.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="left">
+            <h2 class="logo"> <a href="#"> <img src="images/vt toys.jpg" height="50px" width="50px">Toys</a>
+            </h2>
+        </div>
+        <div class="right">
+            <ul class="ULnav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a target="_blank" href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#faqs">FAQs</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pinakamain">
+        <div class="main-content" id="HomePage">
+            <div id="animateElement" data-animate="fade">
+                <div class="mainWC" id="mainWC">
+                    <h1>Welcome to <img src="images/vt toys.jpg" height="100px" width="100px"> Toys!</h1>
+                    <p>Your go-to destination for Anime Figurines and Collectibles.</p>
+                </div>
+            </div>
+            <div class="FnA">
+                <!-- Feature Section -->
+                <div class="features">
+                    <h2>Featured Products</h2>
+                    <div class="product-carousel">
+                        <div class="product">
+                            <img src="images/piccolo.jpg" alt="Product 1">
+                            <h3>TFC Piccolo</h3>
+                        </div>
+                        <div class="product">
+                            <img src="images/shamanking.jpg" alt="Product 2">
+                            <h3>Shaman King Key Holder</h3>
+                        </div>
+                        <div class="product">
+                            <img src="images/dragonball.jpg" alt="Product 3">
+                            <h3>DBZ Unifive Tenkaichi</h3>
+                        </div>
+                        <div class="carousel-arrow prev">
+                            <button>&larr;</button>
+                        </div>
+                        <div class="carousel-arrow next">
+                            <button>&rarr;</button>
+                        </div>
+                        <div class="carousel-dots">
+                            <div class="carousel-dot"></div>
+                            <div class="carousel-dot"></div>
+                            <div class="carousel-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about">
+                <div class="about" id="animateElement" data-animate="fade">
+                    <h1>About us</h1>
+                    <p>
+                        VT TOYS is a family-owned and operated online shopping site
+                        that takes us back to what we loved and grew up as kids.
+                        Specializing in hard-to-find and custom action figures.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ikalawangmain">
+                <div class="col">
+                    <div class="call-to-action">
+                        <h2>
+                            Explore Our Collection
+                        </h2>
+                    </div>
+                    <div class="collection">
+                        <div class="DBZ">
+                            <div id="animateElement" data-animate="fade">
+                                <img src="images/dbz.png">
+                            </div>
+                            <div class="textDb" id="animateElement" data-animate="fade">
+
+                                <div class="dbText">Dragonball Figurines and Collectibles that ranges from Iciban kuji,
+                                    Legend
+                                    of
+                                    Saiyan,
+                                    World
+                                    Collectible Figures, Etc.</div><br>
+                                <button class="shopB" onclick="goToProducts('DBZcol')">
+                                    Shop Now!
+                                </button>
+                            </div>
+                        </div>
+                        <div class="One" id="animateElement" data-animate="fade">
+                            <div class="textDb">
+                                <div class="oneText" id="animateElement" data-animate="fade">One Piece Figurines and
+                                    Collectibles that ranges from Iciban kuji,
+                                    Legen of
+                                    Sayan,
+                                    World
+                                    Collectible Figures, Etc.</div><br>
+                                <button class="shopB" onclick="goToProducts('OPcol')">
+                                    Shop Now!
+                                </button>
+                            </div>
+                            <img src="images/One.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ikatlongmain">
+            <div class="calltoaction" id="faqs">
+                <h2>FAQs</h2>
+            </div>
+            <div id="animateElement" data-animate="fade">
+                <ul id="accordion">
+                    <li>
+                        <label for="first">How do we deliver? <span>&#x3e</span></label>
+                        <input type="radio" name="accordion" id="first" checked>
+                        <div class="content">
+                            <p>Our shop delivery depends on the clients basis of delivery, The time of delivery depends
+                                on
+                                the
+                                distance of the Buyer.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="second">How authentic is your Products?<span>&#x3e</span></label>
+                        <input type="radio" name="accordion" id="second" checked>
+                        <div class="content">
+                            <p>Every items or product is 100% authentic from japan.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="third">What is the condition of the item?<span>&#x3e</span></label>
+                        <input type="radio" name="accordion" id="third" checked>
+                        <div class="content">
+                            <p>The condition differs from MISB(Sealed never opened), MIB(Opened for checking) and Back
+                                in
+                                Box.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer id="contacts">
+    <div class="row">
+        <a href="https://www.facebook.com/profile.php?id=100064035250585" target="_blank">
+            <img src="images/facebook.png" alt="facebook" height="40px" width="40px"></a>
+        <a href="mailto:candovince0908@gmail.com">
+            <img src="images/gmail-logo.png" height="40px" width="40px">
+        </a>
+        <a href="tel:+639183130248">
+            <img src="images/phone-call.png" height="40px" width="40px">
+        </a>
+    </div>
+    <div class="row">
+        <p>© 2023 VT Toys - All rights reserved || Designed By: Aguas</p>
+    </div>
+</footer>
+
+</html>
